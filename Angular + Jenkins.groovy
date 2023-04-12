@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout scm
+        git branch: 'dev', credentialsId: 'Michael', url: 'https://mjsam88@bitbucket.org/is_corp/demoangularappforci.git'
       }
     }
     stage('Npm Audit') {
