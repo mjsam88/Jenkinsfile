@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'dev', credentialsId: 'Michael', url: 'https://mjsam88@bitbucket.org/is_corp/demoangularappforci.git'
+        git branch: 'dev', credentialsId: 'Michael', url: 'https://mjsam88@bitbucket.org/michael-apexon/demoangularappforci.git'
       }
     }
     stage('Npm Audit') {
